@@ -16,7 +16,7 @@ class MainApplication : Application() {
         super.onCreate()
         application = this
         database =
-            Room.databaseBuilder(applicationContext, AppDatabase::class.java, "database-name")
+            Room.databaseBuilder(applicationContext, AppDatabase::class.java, "offlineFirstArchitecture")
                 .build();
         Stetho.initializeWithDefaults(this)
     }

@@ -47,7 +47,7 @@ class UserListActivity :
                 adapter.notifyDataSetChanged()
             }
         })
-        viewModel.fetchUserList()
+        viewModel.fetchUsersFromDatabaseAndRemove()
 
 
     }

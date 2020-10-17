@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName
 class User {
 
     @PrimaryKey(autoGenerate = true)
-     var id: Int = 0
+     var idUser: Int = 0
 
     @SerializedName("gender")
     var gender: String = ""

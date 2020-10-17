@@ -36,7 +36,7 @@ open class BaseViewModel : ViewModel() {
         compositeDisposable.clear()
     }
 
-    private fun validateNetwork(onNetworkConnected: () -> Unit) {
+    fun validateNetwork(onNetworkConnected: () -> Unit) {
         if (MainApplication.application.applicationContext.isNetworkAvailable()) {
             onNetworkConnected()
         } else {
